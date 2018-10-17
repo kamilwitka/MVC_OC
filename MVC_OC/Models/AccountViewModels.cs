@@ -52,7 +52,7 @@ namespace MVC_OC.Models
         [Display(Name = "Adres e-mail")]
         [EmailAddress]
         public string Email { get; set; }
-
+        
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Hasło")]
@@ -68,7 +68,7 @@ namespace MVC_OC.Models
         [EmailAddress]
         [Display(Name = "Adres e-mail")]
         public string Email { get; set; }
-
+        
         [Required]
         [StringLength(100, ErrorMessage = "{0} musi zawierać co najmniej następującą liczbę znaków: {2}.", MinimumLength = 6)]
         [DataType(DataType.Password)]
