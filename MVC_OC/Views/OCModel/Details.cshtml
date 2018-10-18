@@ -1,0 +1,42 @@
+﻿@model MVC_OC.Models.OCModels
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OCModels</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripton)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripton)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarModel)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OC_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
