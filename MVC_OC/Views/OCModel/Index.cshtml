@@ -4,21 +4,24 @@
     ViewBag.Title = "OC Database";
 }
 
-<h2>Index</h2>
+<h2>Baza OC</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Dodaj pozycję", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            Nazwa
+            @*@Html.DisplayNameFor(model => model.Name)*@
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Descripton)
+            Opis
+            @*@Html.DisplayNameFor(model => model.Descripton)*@
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CarModel)
+            Model pojazdu
+            @*@Html.DisplayNameFor(model => model.CarModel)*@
         </th>
         <th></th>
     </tr>
@@ -35,9 +38,9 @@
             @Html.DisplayFor(modelItem => item.CarModel)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.OC_ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.OC_ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.OC_ID })
+            @Html.ActionLink("Edytuj", "Edit", new { id=item.OC_ID }) |
+            @Html.ActionLink("Szczegóły", "Details", new { id=item.OC_ID }) |
+            @Html.ActionLink("Usuń", "Delete", new { id=item.OC_ID })
         </td>
     </tr>
 }
